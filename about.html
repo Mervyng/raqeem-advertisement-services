@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us | Raqeem Advertising Services — Luxury Creative Agency Dubai</title>
+    <meta name="description" content="Learn about Raqeem Advertising Services: an elite Dubai advertising agency driven by prestige strategy, visionary creative direction, and high-impact digital execution." />
+    <meta name="keywords" content="about Raqeem, advertising agency Dubai, branding team UAE, creative agency story" />
+    <meta name="author" content="Raqeem Advertising Services" />
+    <meta name="theme-color" content="#070B10" />
+
+    <link rel="icon" type="image/jpeg" href="images/Raqqem.jpg" />
+    <link rel="apple-touch-icon" href="images/Raqqem.jpg" />
+
+    <!-- Google Fonts & Font Awesome -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <!-- Master Stylesheet -->
+    <link rel="stylesheet" href="CSS/style.css" />
+
+    <style>
+        .page-hero {
+            padding: 180px 0 80px;
+            background: radial-gradient(ellipse at top center, rgba(212, 175, 55, 0.12) 0%, transparent 70%), var(--bg-black);
+            text-align: center;
+            position: relative;
+        }
+
+        .story-section {
+            padding: 100px 0;
+            background: var(--bg-main);
+        }
+
+        .story-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 28px;
+            margin-top: 50px;
+        }
+
+        .value-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-white);
+            border-radius: var(--radius-lg);
+            padding: 36px 28px;
+            transition: var(--transition-normal);
+        }
+
+        .value-card:hover {
+            border-color: var(--border-gold);
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-gold);
+        }
+
+        .value-icon {
+            font-size: 2rem;
+            color: var(--gold-primary);
+            margin-bottom: 20px;
+        }
+
+        .timeline-section {
+            padding: 100px 0;
+            background: var(--bg-surface);
+        }
+
+        .timeline-wrapper {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            padding-left: 40px;
+        }
+
+        .timeline-wrapper::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 12px;
+            width: 2px;
+            background: var(--gold-red-gradient);
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 48px;
+        }
+
+        .timeline-dot {
+            position: absolute;
+            left: -35px;
+            top: 4px;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: var(--gold-primary);
+            border: 3px solid var(--bg-surface);
+            box-shadow: 0 0 12px var(--gold-glow);
+        }
+
+        .timeline-item:nth-child(even) .timeline-dot {
+            background: var(--red-bright);
+            box-shadow: 0 0 12px var(--red-glow);
+        }
+
+        .timeline-year {
+            font-family: var(--font-display);
+            font-size: 1.4rem;
+            font-weight: 800;
+            color: var(--gold-primary);
+            margin-bottom: 6px;
+        }
+
+        .awards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 24px;
+            margin-top: 48px;
+        }
+
+        .award-box {
+            background: var(--bg-card);
+            border: 1px solid var(--border-gold);
+            border-radius: var(--radius-md);
+            padding: 28px 20px;
+            text-align: center;
+            transition: var(--transition-normal);
+        }
+
+        .award-box:hover {
+            transform: scale(1.04);
+            border-color: var(--red-bright);
+            box-shadow: var(--shadow-red);
+        }
+
+        .award-box i {
+            font-size: 2.2rem;
+            color: var(--gold-primary);
+            margin-bottom: 12px;
+        }
+
+        @media (max-width: 900px) {
+            .story-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ─── PRELOADER ─── -->
+    <div class="preloader" id="preloader" aria-hidden="true">
+        <div class="preloader-emblem">
+            <i class="fas fa-crown text-gold"></i>
+        </div>
+        <div class="preloader-letters">
+            <span>R</span><span>A</span><span>Q</span><span>E</span><span>E</span><span>M</span>
+        </div>
+        <span class="preloader-subtext">About Raqeem &bull; Dubai</span>
+    </div>
+
+    <!-- ─── NAVIGATION ─── -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo" aria-label="Raqeem Advertising Services">
+                <div class="logo-icon-wrapper">
+                    <img src="images/Raqqem.jpg" alt="Raqeem Logo" onerror="this.src='images/Raqeem-Advertising-Logo.jpg'" />
+                </div>
+                <div class="logo-text-block">
+                    <span class="logo-brand-title">RAQEEM<span class="gold-dot">.</span></span>
+                    <span class="logo-brand-subtitle">Advertising Services</span>
+                </div>
+            </a>
+
+            <ul class="nav-menu" id="navMenu" aria-label="Main Navigation">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link active">About</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                <li><a href="blog.html" class="nav-link">Insights</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <a href="contact.html" class="btn btn-gold btn-sm">
+                    <i class="fas fa-paper-plane"></i> Get Proposal
+                </a>
+                <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ─── PAGE HERO ─── -->
+    <header class="page-hero">
+        <div class="container">
+            <span class="section-tag"><i class="fas fa-crown"></i> Agency Manifesto</span>
+            <h1 class="section-title" style="font-size: clamp(2.6rem, 5vw, 4.2rem);">
+                The Architects of <span class="highlight-gold">Brand Prestige</span> & <span class="highlight-red">Market Power</span>
+            </h1>
+            <p class="section-desc" style="max-width: 720px; margin: 0 auto;">
+                Headquartered in Dubai, Raqeem was founded on a singular premise: modern luxury advertising must deliver unshakeable cultural prestige alongside ruthless revenue velocity.
+            </p>
+        </div>
+    </header>
+
+    <!-- ─── AGENCY STORY ─── -->
+    <section class="story-section">
+        <div class="container">
+            <div class="story-grid">
+                <div>
+                    <span class="section-tag tag-red"><i class="fas fa-history"></i> Our Genesis</span>
+                    <h2 class="section-title" style="font-size: 2.5rem;">Where Vision Meets <span class="highlight-gold">Execution</span></h2>
+                    <p class="section-desc" style="margin-bottom: 20px;">
+                        In an era saturated with generic digital noise and bland stock creative, Raqeem Advertising Services arose as an unapologetic antidote. We serve visionary founders, luxury conglomerates, and high-growth enterprises who refuse to blend in.
+                    </p>
+                    <p class="section-desc" style="margin-bottom: 24px;">
+                        Our multidisciplinary team unites veteran creative directors, 3D CGI visualists, behavioral psychologists, and quantitative media buyers operating out of our Downtown Dubai creative suite.
+                    </p>
+                    <div style="display: flex; gap: 24px;">
+                        <div>
+                            <h3 class="count-up text-gold" style="font-size: 2.2rem; font-weight: 800; font-family: var(--font-display);" data-target="8" data-prefix="" data-suffix="+">8+</h3>
+                            <p style="font-size: 0.85rem; color: var(--white-soft); text-transform: uppercase;">Years in GCC</p>
+                        </div>
+                        <div>
+                            <h3 class="count-up text-red" style="font-size: 2.2rem; font-weight: 800; font-family: var(--font-display);" data-target="45" data-prefix="" data-suffix="+">45+</h3>
+                            <p style="font-size: 0.85rem; color: var(--white-soft); text-transform: uppercase;">Industry Awards</p>
+                        </div>
+                        <div>
+                            <h3 class="count-up text-gold" style="font-size: 2.2rem; font-weight: 800; font-family: var(--font-display);" data-target="100" data-prefix="" data-suffix="%">100%</h3>
+                            <p style="font-size: 0.85rem; color: var(--white-soft); text-transform: uppercase;">In-House Craft</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="position: relative;">
+                    <div style="border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--border-gold); box-shadow: var(--shadow-combined);">
+                        <img src="images/hero-brand-visual.jpg" alt="Raqeem Creative Suite Dubai" onerror="this.src='images/Raqqem.jpg'" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── CORE VALUES ─── -->
+    <section style="padding: 100px 0; background: var(--bg-surface);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-gem"></i> Guiding Principles</span>
+                <h2 class="section-title">The Four Pillars of <span class="highlight-blend">Raqeem Excellence</span></h2>
+                <p class="section-desc">These core tenets govern every campaign, visual identity, and strategic media placement we deliver.</p>
+            </div>
+
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon"><i class="fas fa-fire-alt text-red"></i></div>
+                    <h3 style="font-size: 1.3rem; margin-bottom: 12px;">Creative Audacity</h3>
+                    <p style="color: var(--white-soft); font-size: 0.95rem; line-height: 1.6;">
+                        Safe ideas produce mediocre returns. We engineer provocative, stunning creative that pierces through market complacency.
+                    </p>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-icon"><i class="fas fa-chart-pie text-gold"></i></div>
+                    <h3 style="font-size: 1.3rem; margin-bottom: 12px;">Mathematical Rigor</h3>
+                    <p style="color: var(--white-soft); font-size: 0.95rem; line-height: 1.6;">
+                        Art without analytics is indulgence. Every dollar of media spend is tracked to bottom-line profitability and customer lifetime value.
+                    </p>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-icon"><i class="fas fa-fingerprint text-gold"></i></div>
+                    <h3 style="font-size: 1.3rem; margin-bottom: 12px;">Bespoke Exclusivity</h3>
+                    <p style="color: var(--white-soft); font-size: 0.95rem; line-height: 1.6;">
+                        We limit client intake per sector to protect competitive separation and ensure senior partner attention on every project.
+                    </p>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-icon"><i class="fas fa-bolt text-red"></i></div>
+                    <h3 style="font-size: 1.3rem; margin-bottom: 12px;">Velocity & Execution</h3>
+                    <p style="color: var(--white-soft); font-size: 0.95rem; line-height: 1.6;">
+                        Speed is a luxury superpower. We transition from strategic alignment to live international campaign deployment in record time.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── TIMELINE ─── -->
+    <section class="timeline-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag tag-red"><i class="fas fa-stream"></i> Our Journey</span>
+                <h2 class="section-title">Milestones of <span class="highlight-gold">Growth</span></h2>
+            </div>
+
+            <div class="timeline-wrapper">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-year">2018 &bull; The Inception</div>
+                    <h4 style="font-size: 1.15rem; color: var(--white); margin-bottom: 6px;">Boutique Creative Studio Launched in Dubai</h4>
+                    <p style="color: var(--white-soft); font-size: 0.95rem;">Founded to bridge high-fashion European luxury aesthetics with Middle Eastern commercial growth.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-year">2021 &bull; Regional Expansion</div>
+                    <h4 style="font-size: 1.15rem; color: var(--white); margin-bottom: 6px;">$50M+ Client Ad Spend Managed Across GCC</h4>
+                    <p style="color: var(--white-soft); font-size: 0.95rem;">Scaled performance digital media division, acquiring major real estate, hospitality, and luxury retail accounts.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-year">2024 &bull; 3D & CGI Innovation</div>
+                    <h4 style="font-size: 1.15rem; color: var(--white); margin-bottom: 6px;">Pioneering 3D Anamorphic LED Billboards</h4>
+                    <p style="color: var(--white-soft); font-size: 0.95rem;">Introduced optical illusion anamorphic billboard engineering across Dubai Downtown and Marina hubs.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-year">2026 &bull; The Next Era</div>
+                    <h4 style="font-size: 1.15rem; color: var(--white); margin-bottom: 6px;">Autonomous AI Creative & Global Dominance</h4>
+                    <p style="color: var(--white-soft); font-size: 0.95rem;">Deploying next-generation creative intelligence and hyper-targeted multi-channel advertising systems.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── AWARDS ─── -->
+    <section style="padding: 100px 0; background: var(--bg-main);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-trophy"></i> Industry Recognition</span>
+                <h2 class="section-title">Award-Winning <span class="highlight-blend">Pedigree</span></h2>
+            </div>
+
+            <div class="awards-grid">
+                <div class="award-box">
+                    <i class="fas fa-trophy"></i>
+                    <h4 style="color: var(--white); font-size: 1.1rem; margin-bottom: 4px;">Dubai Lynx Gold</h4>
+                    <p style="color: var(--gold-300); font-size: 0.85rem;">Luxury Branding 2025</p>
+                </div>
+                <div class="award-box">
+                    <i class="fas fa-award text-red"></i>
+                    <h4 style="color: var(--white); font-size: 1.1rem; margin-bottom: 4px;">MENA Effies</h4>
+                    <p style="color: var(--red-bright); font-size: 0.85rem;">High-Growth ROI 2024</p>
+                </div>
+                <div class="award-box">
+                    <i class="fas fa-crown"></i>
+                    <h4 style="color: var(--white); font-size: 1.1rem; margin-bottom: 4px;">Cannes Lions Shortlist</h4>
+                    <p style="color: var(--gold-300); font-size: 0.85rem;">Outdoor Media 2025</p>
+                </div>
+                <div class="award-box">
+                    <i class="fas fa-medal text-red"></i>
+                    <h4 style="color: var(--white); font-size: 1.1rem; margin-bottom: 4px;">Global Webby Nominee</h4>
+                    <p style="color: var(--red-bright); font-size: 0.85rem;">Best Visual Design 2026</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── FOOTER ─── -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top-grid">
+                <div class="footer-brand-col">
+                    <a href="index.html" class="logo">
+                        <div class="logo-icon-wrapper">
+                            <img src="images/Raqqem.jpg" alt="Raqeem Logo" onerror="this.src='images/Raqeem-Advertising-Logo.jpg'" />
+                        </div>
+                        <div class="logo-text-block">
+                            <span class="logo-brand-title">RAQEEM<span class="gold-dot">.</span></span>
+                            <span class="logo-brand-subtitle">Advertising Services</span>
+                        </div>
+                    </a>
+                    <p>A prestige advertising agency engineering market supremacy for visionary brands in Dubai and worldwide.</p>
+                </div>
+                <div>
+                    <h4 class="footer-col-title">Navigation</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Agency</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-col-title">Core Services</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="services.html">Brand Architecture</a></li>
+                        <li><a href="services.html">Performance Ads</a></li>
+                        <li><a href="services.html">8K Video Production</a></li>
+                        <li><a href="services.html">3D Billboard Screens</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-col-title">Dubai Headquarters</h4>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Level 28, Downtown Creative Tower, Dubai, UAE</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>+971 50 123 4567</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom-bar">
+                <p>&copy; 2026 Raqeem Advertising Services LLC. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp -->
+    <div class="floating-actions-bar">
+        <a href="https://wa.me/971501234567" target="_blank" rel="noopener noreferrer" class="float-action-btn btn-float-whatsapp" aria-label="Chat on WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <script src="JS/main.js"></script>
+</body>
+</html>
